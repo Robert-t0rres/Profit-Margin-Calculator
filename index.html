@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="toggle-switch">
+            <input type="checkbox" id="toggleCalculation" class="checkbox">
+            <label for="toggleCalculation" class="label">
+                <span class="inner"></span>
+                <span class="switch"></span>
+            </label>
+        </div>
+
+        <label for="basePrice">Base Price</label>
+        <input type="number" id="basePrice">
+
+        <label for="shippingPrice">Shipping Price</label>
+        <input type="number" id="shippingPrice">
+
+        <label for="dynamicInput">Profit Margin (%)</label>
+        <input type="number" id="dynamicInput">
+
+        <button id="calculateButton">Calculate</button>
+
+        <div id="breakEvenBefore">Break Even (Before Rounding): $<span id="breakEvenBeforePrice"></span></div>
+        <div id="breakEvenAfter">Break Even (After Rounding): $<span id="breakEvenAfterPrice"></span></div>
+        <div id="dynamicOutput">Final Price: $<span id="dynamicOutputValue"></span></div>
+        <div id="profit">Profit: $<span id="profitAmount"></span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

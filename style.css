@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.calculator label {
+    display: block;
+    margin-top: 10px;
+}
+
+.calculator input, .calculator button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: white;
+    box-sizing: border-box;
+}
+
+.calculator button {
+    background-color: #5C6BC0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #3F51B5;
+}
+
+.calculator div {
+    margin-top: 10px;
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+    margin: 20px 0;
+    position: relative;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label {
+    display: block;
+    cursor: pointer;
+    width: 50px; /* Width of the toggle switch */
+    height: 24px; /* Height of the toggle switch */
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.label .switch {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 22px; /* Width of the slider */
+    height: 22px; /* Height of the slider */
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Position the slider button to the right when checked */
+.checkbox:checked + .label .switch {
+    left: 27px; /* Should be the width of the switch - width of the button */
+}
+
+/* Change background color of the switch when active/checked */
+.checkbox:checked + .label {
+    background-color: #4CAF50;
+}
