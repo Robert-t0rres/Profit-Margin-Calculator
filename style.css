@@ -23,6 +23,15 @@ body {
     margin-top: 10px;
 }
 
+/* Responsive styles for screens less than 600px wide */
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%; /* Make the calculator take up most of the screen */
+        margin: 10px; /* Add some margin to the sides */
+        box-sizing: border-box; /* Make sure padding doesn't affect the width */
+    }
+
+
 .calculator input, .calculator button {
     width: calc(100% - 20px);
     padding: 10px;
